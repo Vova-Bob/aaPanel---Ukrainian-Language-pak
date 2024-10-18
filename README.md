@@ -16,21 +16,6 @@
 3. Go to the **Language** tab.
 4. From the dropdown menu, select **Українська** to switch the panel's language to Ukrainian.
 
-### 4. Clear Browser Cache (Optional but Recommended)
-To ensure the new language settings take effect, you may need to clear your browser cache:
-
-- **For Windows:**
-  - Press `Ctrl + Shift + Delete`, select the items to clear, and click **Clear data**.
-
-- **For macOS:**
-  - Press `Cmd + Shift + Delete`, select the items to clear, and click **Clear**.
-
-- **For Linux:**
-  - **Google Chrome:**
-    - Press `Ctrl + Shift + Delete`, select the items to clear, and click **Clear data**.
-  
-  - **Mozilla Firefox:**
-    - Press `Ctrl + Shift + Delete`, select the items to clear, and click **OK**.
 
 ---
 
@@ -52,19 +37,4 @@ To ensure the new language settings take effect, you may need to clear your brow
 3. Перейдіть до вкладки **Мова**.
 4. У випадаючому списку виберіть **Українська**, щоб змінити мову панелі на українську.
 
-### 4. Очистіть кеш браузера (необов'язково, але рекомендовано)
-Щоб нові мовні налаштування набрали чинності, можливо, потрібно очистити кеш браузера:
-
-- **Для Windows:**
-  - Натисніть `Ctrl + Shift + Delete`, виберіть елементи для очищення і натисніть **Очистити дані**.
-
-- **Для macOS:**
-  - Натисніть `Cmd + Shift + Delete`, виберіть елементи для очищення і натисніть **Очистити**.
-
-- **Для Linux:**
-  - **Google Chrome:**
-    - Натисніть `Ctrl + Shift + Delete`, виберіть елементи для очищення і натисніть **Очистити дані**.
-  
-  - **Mozilla Firefox:**
-    - Натисніть `Ctrl + Shift + Delete`, виберіть елементи для очищення і натисніть **ОК**.
-
+![Image Description](https://www.aapanel.com/forum/assets/files/2024-10-18/1729292693-914987-screenshot-2024-10-19-020309.png)
