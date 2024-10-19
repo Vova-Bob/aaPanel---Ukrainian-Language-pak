@@ -16,6 +16,18 @@
 3. Go to the **Language** tab.
 4. From the dropdown menu, select **Українська** to switch the panel's language to Ukrainian.
 
+### 4. Use Command for Automatic Installation  
+For automatic installation of the Ukrainian language pack, you can use one of the following commands in the terminal:
+
+**Using `wget`:**
+```bash
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/main/ua_language_pack.sh)"
+```
+
+**Using `curl`:**
+```bash
+sudo bash -c "$(curl -s https://raw.githubusercontent.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/main/ua_language_pack.sh)"
+```
 
 ---
 
@@ -36,5 +48,18 @@
 2. Натисніть на **Налаштування**.
 3. Перейдіть до вкладки **Мова**.
 4. У випадаючому списку виберіть **Українська**, щоб змінити мову панелі на українську.
+
+### 4. Використайте команду для автоматичної установки  
+Для автоматичної установки українського мовного пакету ви можете скористатися однією з наведених команд у терміналі:
+
+**Використовуючи `wget`:**
+```bash
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/main/ua_language_pack.sh)"
+```
+
+**Використовуючи `curl`:**
+```bash
+sudo bash -c "$(curl -s https://raw.githubusercontent.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/main/ua_language_pack.sh)"
+```
 
 ![Image Description](https://www.aapanel.com/forum/assets/files/2024-10-18/1729292693-914987-screenshot-2024-10-19-020309.png)
