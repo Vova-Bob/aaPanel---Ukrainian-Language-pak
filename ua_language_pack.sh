@@ -29,7 +29,7 @@ fi
 echo "Копіювання мовного пакету до $INSTALL_DIR..."
 if [ -d "$INSTALL_DIR" ]; then
     # Заміна файлів у разі наявності
-    rm -rf "$INSTALL_DIR/*"
+    rm -rf "$INSTALL_DIR/"*
 else
     mkdir -p "$INSTALL_DIR"
 fi
