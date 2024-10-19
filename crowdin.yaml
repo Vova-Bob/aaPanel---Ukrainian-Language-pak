@@ -1,6 +1,3 @@
 files:
   - translation: /BTPanel/languages/uk/%original_file_name%
-    export_pattern: /BTPanel/languages/uk/%original_file_name%
   - translation: /BTPanel/static/vite/lang/uk/%original_file_name%
-    export_pattern: /BTPanel/static/vite/lang/uk/%original_file_name%
-
