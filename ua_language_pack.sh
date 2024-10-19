@@ -1,36 +1,36 @@
 #!/bin/bash
 
-# Оголошення змінних
+# Визначаємо URL для скачування
 REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak"
-INSTALL_PATH="/www/server/panel"
-TEMP_PATH="/tmp/aaPanel-ua"
+LANGUAGE_PACK="BTPanel"
 
-echo "Клонування репозиторію з українським перекладом..."
+# Директорія для установки
+INSTALL_DIR="/www/server/panel/$LANGUAGE_PACK"
 
-# Клонування репозиторію до тимчасової директорії
-git clone $REPO_URL $TEMP_PATH
-
-# Перевірка на успішність клонування
-if [ $? -eq 0 ]; then
-  echo "Репозиторій успішно скопійовано."
+# Завантажуємо файли з репозиторію
+echo "Завантаження мовного пакету з GitHub..."
+if command -v git &> /dev/null; then
+    # Якщо git доступний, клонуємо репозиторій
+    git clone --depth=1 "$REPO_URL" temp_repo
 else
-  echo "Помилка клонування репозиторію. Перевірте URL."
-  exit 1
+    echo "git не знайдено, спробуємо використати wget для завантаження."
+    wget -q -O temp_repo.zip "$REPO_URL/archive/refs/heads/main.zip"
+    unzip -q temp_repo.zip
+    mv "aaPanel---Ukrainian-Language-pak-main/$LANGUAGE_PACK" temp_repo
+    rm -rf aaPanel---Ukrainian-Language-pak-main temp_repo.zip
 fi
 
-# Копіювання локалізаційних файлів до панелі aaPanel
-echo "Копіювання файлів перекладу до $INSTALL_PATH..."
-cp -r $TEMP_PATH/* $INSTALL_PATH/
-
-# Перевірка на успішність копіювання
-if [ $? -eq 0 ]; then
-  echo "Файли успішно скопійовані."
+# Копіюємо файли до директорії aapanel
+echo "Копіювання мовного пакету до $INSTALL_DIR..."
+if [ -d "$INSTALL_DIR" ]; then
+    # Заміна файлів у разі наявності
+    rm -rf "$INSTALL_DIR/*"
 else
-  echo "Помилка копіювання файлів."
-  exit 1
+    mkdir -p "$INSTALL_DIR"
 fi
+cp -r temp_repo/* "$INSTALL_DIR"
 
-# Видалення тимчасових файлів
-rm -rf $TEMP_PATH
+# Очищуємо тимчасову папку
+rm -rf temp_repo
 
-echo "Встановлення завершено. Перейдіть в налаштування aaPanel і виберіть українську мову."
+echo "Мовний пакет успішно встановлено!"
