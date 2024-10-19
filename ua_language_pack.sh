@@ -2,9 +2,10 @@
 
 # Визначаємо URL для скачування
 REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak"
+LANGUAGE_PACK="BTPanel"
 
 # Директорія для установки
-INSTALL_DIR="/www/server/panel/BTPanel"
+INSTALL_DIR="/www/server/panel/$LANGUAGE_PACK"
 
 # Перевірка наявності прав на запис у директорію
 if [ ! -w "/www/server/panel/" ]; then
@@ -29,7 +30,7 @@ fi
 echo "Копіювання мовного пакету до $INSTALL_DIR..."
 if [ -d "$INSTALL_DIR" ]; then
     # Заміна файлів у разі наявності
-    rm -rf "$INSTALL_DIR/"*
+    rm -rf "$INSTALL_DIR/*"
 else
     mkdir -p "$INSTALL_DIR"
 fi
