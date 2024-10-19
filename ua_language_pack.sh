@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Оголошення змінних
-REPO_URL="https://raw.githubusercontent.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/main/BTPanel"
+REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/tree/main/BTPanel"
 INSTALL_PATH="/www/server/panel"
 
 # Функція для виведення помилок
@@ -13,11 +13,12 @@ error_exit() {
 # Створення тимчасової директорії
 TEMP_PATH=$(mktemp -d)
 
+# Завантаження мовного пакету
 echo "Завантаження мовного пакету..."
 
 # Завантаження файлів з репозиторію
 if command -v wget >/dev/null 2>&1; then
-    wget -r -np -nH --cut-dirs=3 -P $TEMP_PATH $REPO_URL || error_exit "Помилка завантаження мовного пакету."
+    wget -r -np -nH --cut-dirs=4 -P $TEMP_PATH $REPO_URL || error_exit "Помилка завантаження мовного пакету."
 else
     curl -L $REPO_URL -o $TEMP_PATH || error_exit "Помилка завантаження мовного пакету."
 fi
