@@ -1,14 +1,12 @@
 "files": [
   {
-    "source": "/BTPanel/languages/uk/*.json",
-    "translation": "/BTPanel/languages/uk/%original_file_name%",
-    "import_translations": true,
+    "source": "/BTPanel/languages/uk/*.json", 
+    "translation": "/BTPanel/languages/%two_letters_code%/%original_file_name%",
     "export_pattern": "/BTPanel/languages/uk/%original_file_name%"
   },
   {
     "source": "/BTPanel/static/vite/lang/uk/*.json",
-    "translation": "/BTPanel/static/vite/lang/uk/%original_file_name%",
-    "import_translations": true,
+    "translation": "/BTPanel/static/vite/lang/%two_letters_code%/%original_file_name%",
     "export_pattern": "/BTPanel/static/vite/lang/uk/%original_file_name%"
   }
 ]
