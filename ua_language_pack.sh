@@ -26,7 +26,7 @@ else
     rm -rf aaPanel---Ukrainian-Language-pak-main temp_repo.zip
 fi
 
-# Копіюємо файли до директорії aapanel
+# Копіюємо лише потрібні файли до директорії aapanel
 echo "Копіювання мовного пакету до $INSTALL_DIR..."
 if [ -d "$INSTALL_DIR" ]; then
     # Заміна файлів у разі наявності
@@ -35,8 +35,12 @@ else
     mkdir -p "$INSTALL_DIR"
 fi
 
-# Копіюємо лише потрібні файли (додаємо список файлів, які потрібні)
-cp -r temp_repo/* "$INSTALL_DIR"
+# Копіюємо тільки потрібні файли (без LICENSE, README.md, ua_language_pack.sh)
+cp -r temp_repo/* "$INSTALL_DIR" --exclude=LICENSE --exclude=README.md --exclude=ua_language_pack.sh || {
+    echo "Помилка при копіюванні файлів до $INSTALL_DIR."
+    exit 1
+}
+
 # Очищуємо тимчасову папку
 rm -rf temp_repo
 
