@@ -16,9 +16,13 @@ mkdir -p "$INSTALL_PATH"
 echo "Завантаження мовного пакету..."
 
 # Завантаження всіх файлів з репозиторію в потрібну директорію
-wget -q -r -np -nH --cut-dirs=3 -P "$INSTALL_PATH" "$REPO_URL/" || {
+wget -r -np -nH --cut-dirs=3 -P "$INSTALL_PATH" "$REPO_URL/" || {
     echo "Помилка: Не вдалося завантажити файли з $REPO_URL" >&2
     echo "Перевірте URL, доступ до інтернету або права доступу." >&2
+    echo "Додаткова інформація:"
+    echo "================================="
+    echo "HTTP статус: $?"  # Додаємо статус HTTP
+    echo "Остання команда: wget -r -np -nH --cut-dirs=3 -P $INSTALL_PATH $REPO_URL/"
     exit 1
 }
 
