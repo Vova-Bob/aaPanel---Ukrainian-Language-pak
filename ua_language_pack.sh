@@ -36,7 +36,8 @@ else
 fi
 
 # Копіюємо тільки потрібні файли (без LICENSE, README.md, ua_language_pack.sh)
-cp -r temp_repo/* "$INSTALL_DIR" --exclude=LICENSE --exclude=README.md --exclude=ua_language_pack.sh || {
+shopt -s extglob
+cp -r temp_repo/!(LICENSE|README.md|ua_language_pack.sh) "$INSTALL_DIR/" || {
     echo "Помилка при копіюванні файлів до $INSTALL_DIR."
     exit 1
 }
