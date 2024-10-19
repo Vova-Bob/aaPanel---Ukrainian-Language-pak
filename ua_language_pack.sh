@@ -34,8 +34,9 @@ if [ -d "$INSTALL_DIR" ]; then
 else
     mkdir -p "$INSTALL_DIR"
 fi
-cp -r temp_repo/* "$INSTALL_DIR"
 
+# Копіюємо лише потрібні файли (додаємо список файлів, які потрібні)
+cp -r temp_repo/* "$INSTALL_DIR"
 # Очищуємо тимчасову папку
 rm -rf temp_repo
 
