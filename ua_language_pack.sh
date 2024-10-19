@@ -1,36 +1,36 @@
 #!/bin/bash
 
 # Оголошення змінних
-INSTALL_PATH="/www/server/panel/BTPanel"
-REPO_URL="https://raw.githubusercontent.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/main/BTPanel"
+REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak"
+INSTALL_PATH="/www/server/panel"
+TEMP_PATH="/tmp/aaPanel-ua"
 
-# Функція для виведення помилок
-error_exit() {
-    echo "$1" >&2
-    exit 1
-}
+echo "Клонування репозиторію з українським перекладом..."
 
-# Створення директорії для встановлення, якщо вона не існує
-mkdir -p "$INSTALL_PATH"
+# Клонування репозиторію до тимчасової директорії
+git clone $REPO_URL $TEMP_PATH
 
-echo "Завантаження мовного пакету..."
-
-# Завантаження всіх файлів з репозиторію в потрібну директорію
-wget -r -np -nH --cut-dirs=3 -P "$INSTALL_PATH" "$REPO_URL/" || {
-    echo "Помилка: Не вдалося завантажити файли з $REPO_URL" >&2
-    echo "Перевірте URL, доступ до інтернету або права доступу." >&2
-    echo "Додаткова інформація:"
-    echo "================================="
-    echo "HTTP статус: $?"  # Додаємо статус HTTP
-    echo "Остання команда: wget -r -np -nH --cut-dirs=3 -P $INSTALL_PATH $REPO_URL/"
-    exit 1
-}
-
-# Перевірка наявності завантажених файлів
-if [ -z "$(ls -A $INSTALL_PATH)" ]; then
-    echo "Помилка: Директорія $INSTALL_PATH пуста. Завантаження не вдалося." >&2
-    exit 1
+# Перевірка на успішність клонування
+if [ $? -eq 0 ]; then
+  echo "Репозиторій успішно скопійовано."
+else
+  echo "Помилка клонування репозиторію. Перевірте URL."
+  exit 1
 fi
 
-echo "Файли успішно завантажені."
+# Копіювання локалізаційних файлів до панелі aaPanel
+echo "Копіювання файлів перекладу до $INSTALL_PATH..."
+cp -r $TEMP_PATH/* $INSTALL_PATH/
+
+# Перевірка на успішність копіювання
+if [ $? -eq 0 ]; then
+  echo "Файли успішно скопійовані."
+else
+  echo "Помилка копіювання файлів."
+  exit 1
+fi
+
+# Видалення тимчасових файлів
+rm -rf $TEMP_PATH
+
 echo "Встановлення завершено. Перейдіть в налаштування aaPanel і виберіть українську мову."
