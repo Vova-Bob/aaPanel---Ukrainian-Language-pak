@@ -2,10 +2,9 @@
 
 # Визначаємо URL для скачування
 REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak"
-LANGUAGE_PACK="BTPanel"
 
 # Директорія для установки
-INSTALL_DIR="/www/server/panel/$LANGUAGE_PACK"
+INSTALL_DIR="/www/server/panel/"
 
 # Перевірка наявності прав на запис у директорію
 if [ ! -w "/www/server/panel/" ]; then
@@ -22,7 +21,7 @@ else
     echo "git не знайдено, спробуємо використати wget для завантаження."
     wget -q -O temp_repo.zip "$REPO_URL/archive/refs/heads/main.zip"
     unzip -q temp_repo.zip
-    mv "aaPanel---Ukrainian-Language-pak-main/$LANGUAGE_PACK" temp_repo
+    mv "aaPanel---Ukrainian-Language-pak-main/BTPanel" temp_repo
     rm -rf aaPanel---Ukrainian-Language-pak-main temp_repo.zip
 fi
 
@@ -37,7 +36,7 @@ fi
 
 # Копіюємо тільки потрібні файли (без LICENSE, README.md, ua_language_pack.sh)
 shopt -s extglob
-cp -r temp_repo/!(LICENSE|README.md|ua_language_pack.sh) "$INSTALL_DIR/" || {
+cp -r temp_repo/!(LICENSE|README.md|ua_language_pack.sh)/* "$INSTALL_DIR/" || {
     echo "Помилка при копіюванні файлів до $INSTALL_DIR."
     exit 1
 }
