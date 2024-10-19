@@ -4,7 +4,7 @@
 REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak"
 
 # Директорія для установки
-INSTALL_DIR="/www/server/panel/"
+INSTALL_DIR="/www/server/panel/BTPanel"
 
 # Перевірка наявності прав на запис у директорію
 if [ ! -w "/www/server/panel/" ]; then
