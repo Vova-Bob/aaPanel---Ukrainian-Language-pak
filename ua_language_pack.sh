@@ -7,6 +7,12 @@ LANGUAGE_PACK="BTPanel"
 # Директорія для установки
 INSTALL_DIR="/www/server/panel/$LANGUAGE_PACK"
 
+# Перевірка наявності прав на запис у директорію
+if [ ! -w "/www/server/panel/" ]; then
+    echo "Помилка: у вас немає прав на запис до директорії /www/server/panel/. Використайте sudo для запуску скрипта."
+    exit 1
+fi
+
 # Завантажуємо файли з репозиторію
 echo "Завантаження мовного пакету з GitHub..."
 if command -v git &> /dev/null; then
