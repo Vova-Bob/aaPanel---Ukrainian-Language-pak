@@ -1,8 +1,10 @@
 #!/bin/bash
 
 # Визначаємо URL для скачування
-REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak/archive/refs/heads/main.zip"
+REPO_URL="https://github.com/Vova-Bob/aaPanel---Ukrainian-Language-pak"
 LANGUAGE_PACK="BTPanel"
+
+# Директорія для установки
 INSTALL_DIR="/www/server/panel/$LANGUAGE_PACK"
 
 # Перевірка наявності прав на запис у директорію
@@ -11,36 +13,29 @@ if [ ! -w "/www/server/panel/" ]; then
     exit 1
 fi
 
-# Функція для завантаження файлів
-download_file() {
-    if command -v curl &> /dev/null; then
-        curl -L -o "$1" "$2"
-    elif command -v wget &> /dev/null; then
-        wget -q -O "$1" "$2"
-    else
-        echo "Помилка: не знайдено 'curl' або 'wget'."
-        exit 1
-    fi
-}
-
 # Завантажуємо файли з репозиторію
 echo "Завантаження мовного пакету з GitHub..."
-download_file "temp_repo.zip" "$REPO_URL"
+if command -v git &> /dev/null; then
+    # Якщо git доступний, клонуємо репозиторій
+    git clone --depth=1 "$REPO_URL" temp_repo
+else
+    echo "git не знайдено, спробуємо використати wget для завантаження."
+    wget -q -O temp_repo.zip "$REPO_URL/archive/refs/heads/main.zip"
+    unzip -q temp_repo.zip
+    mv "aaPanel---Ukrainian-Language-pak-main/BTPanel" temp_repo
+    rm -rf aaPanel---Ukrainian-Language-pak-main temp_repo.zip
+fi
 
-# Розпаковуємо ZIP-файл
-unzip -q temp_repo.zip
-mv "aaPanel---Ukrainian-Language-pak-main/$LANGUAGE_PACK" temp_repo
-rm temp_repo.zip
-
-# Копіюємо файли до директорії aapanel
+# Копіюємо лише потрібні файли до директорії aapanel
 echo "Копіювання мовного пакету до $INSTALL_DIR..."
 if [ -d "$INSTALL_DIR" ]; then
+    # Заміна файлів у разі наявності
     rm -rf "$INSTALL_DIR/*"
 else
     mkdir -p "$INSTALL_DIR"
 fi
 
-# Копіюємо лише потрібні файли, виключаючи непотрібні
+# Копіюємо тільки потрібні файли (без LICENSE, README.md, ua_language_pack.sh)
 shopt -s extglob
 cp -r temp_repo/!(LICENSE|README.md|ua_language_pack.sh)/* "$INSTALL_DIR/" || {
     echo "Помилка при копіюванні файлів до $INSTALL_DIR."
