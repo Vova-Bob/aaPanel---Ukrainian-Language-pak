@@ -14,12 +14,11 @@ jobs:
     - name: Download translations from Crowdin
       uses: crowdin/github-action@v2
       with:
-        upload_translations: false
         download_translations: true
-        crowdin_project_id: ${{ secrets.CROWDIN_PROJECT_ID }}
-        crowdin_personal_token: ${{ secrets.CROWDIN_API_TOKEN }}
+        token: ${{ secrets.CROWDIN_API_TOKEN }}
+        project_id: ${{ secrets.CROWDIN_PROJECT_ID }}
         push_translations: true  # Пуш перекладів в гілку
-        branch_name: 'main'  # Задайте вашу гілку, куди пушити переклади
+        crowdin_branch_name: 'main'  # Назва гілки Crowdin, якщо використовуєте гілки
 
     - name: Commit changes
       run: |
