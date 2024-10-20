@@ -18,8 +18,9 @@ jobs:
         token: ${{ secrets.CROWDIN_API_TOKEN }}
         project_id: ${{ secrets.CROWDIN_PROJECT_ID }}
         push_translations: true  # Пуш перекладів в гілку
+        crowdin_branch_name: 'main'  # Назва гілки Crowdin
         localization_branch_name: 'main'  # Гілка для завантаження перекладів у GitHub
-        download_language: 'uk'  # Завантажити українські переклади
+        # Додайте тут інші необхідні параметри, якщо потрібно
 
     - name: Commit changes
       run: |
