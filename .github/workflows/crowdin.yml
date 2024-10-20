@@ -18,8 +18,8 @@ jobs:
         token: ${{ secrets.CROWDIN_API_TOKEN }}
         project_id: ${{ secrets.CROWDIN_PROJECT_ID }}
         push_translations: true  # Пуш перекладів в гілку
-        crowdin_branch_name: 'main'  # Назва гілки Crowdin
         localization_branch_name: 'main'  # Гілка для завантаження перекладів у GitHub
+        download_language: 'uk'  # Завантажити українські переклади
 
     - name: Commit changes
       run: |
@@ -27,4 +27,4 @@ jobs:
         git config --global user.email "actions@github.com"
         git add .
         git commit -m "Update translations from Crowdin" || echo "No changes to commit"
-        git push origin main  # Пуш змін у гілку main
+        git push
