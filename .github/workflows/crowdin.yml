@@ -14,15 +14,15 @@ jobs:
     - name: Download translations from Crowdin
       run: |
         # Отримуємо список файлів перекладів з Crowdin
-        files=$(curl -X GET "https://api.crowdin.com/api/v2/projects/${{ secrets.CROWDIN_PROJECT_ID }}/translations" \
-        -H "Authorization: Bearer ${{ secrets.CROWDIN_API_TOKEN }}" | jq -r '.data[].name')
+        translations=$(curl -X GET "https://api.crowdin.com/api/v2/projects/${{ secrets.CROWDIN_PROJECT_ID }}/translations" \
+        -H "Authorization: Bearer ${{ secrets.CROWDIN_API_TOKEN }}" | jq -r '.data[] | .name')
 
         # Завантажуємо переклади для кожного файлу
-        for file in $files; do
+        for file in $translations; do
           echo "Завантаження перекладу для $file"
           curl -X GET "https://api.crowdin.com/api/v2/projects/${{ secrets.CROWDIN_PROJECT_ID }}/translations/${file}" \
           -H "Authorization: Bearer ${{ secrets.CROWDIN_API_TOKEN }}" \
-          -o "$file" # Зберігаємо переклад в файл з такою ж назвою
+          -o "$file" || echo "Не вдалося завантажити $file"
         done
 
     - name: Commit changes
