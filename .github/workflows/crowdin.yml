@@ -1,0 +1,30 @@
+name: Download Translations from Crowdin
+
+on:
+  workflow_dispatch:  # Запуск вручну
+
+jobs:
+  download_translations:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Download translations from Crowdin
+      uses: crowdin/github-action@v2
+      with:
+        upload_translations: false
+        download_translations: true
+        crowdin_project_id: ${{ secrets.CROWDIN_PROJECT_ID }}
+        crowdin_personal_token: ${{ secrets.CROWDIN_API_TOKEN }}
+        push_translations: true  # Пуш перекладів в гілку
+        branch_name: 'main'  # Задайте вашу гілку, куди пушити переклади
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add .
+        git commit -m "Update translations from Crowdin"
+        git push
