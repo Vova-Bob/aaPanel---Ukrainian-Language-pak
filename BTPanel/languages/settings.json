@@ -2,46 +2,58 @@
     "default": "uk",
     "languages": [
         {
-            "name": "uk",
-            "google": "uk",
-            "title": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
-            "cn": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
+            "name": "cht",
+            "google": "ж-ж-ж",
+            "title": "繁體中文",
+            "cn": "繁體中文"
         },
         {
             "name": "en",
             "google": "en",
-            "title": "English",
-            "cn": "\u82f1\u8bed"
+            "title": "Англійська мова",
+            "cn": "英语"
         },
         {
-            "name": "de",
-            "google": "de",
-            "title": "Deutsch",
-            "cn": "\u5fb7\u8bed"
+            "name": "де",
+            "google": "де",
+            "title": "Німецька",
+            "cn": "德语"
         },
         {
-            "name": "fra",
+            "name": "фра",
             "google": "fr",
-            "title": "Fran\u00e7ais",
-            "cn": "\u6cd5\u8bed"
+            "title": "Французька",
+            "cn": "法语"
         },
         {
-            "name": "spa",
-            "google": "es",
-            "title": "Espa\u00f1ol",
-            "cn": "\u897f\u73ed\u7259\u8bed"
+            "name": "спа-салон",
+            "google": "ес",
+            "title": "Іспанська",
+            "cn": "西班牙语"
         },
         {
             "name": "pt",
             "google": "pt",
-            "title": "Portugu\u00eas",
-            "cn": "\u8461\u8404\u7259\u8bed"
+            "title": "Португальська",
+            "cn": "葡萄牙语"
         },
         {
-            "name": "cht",
-            "google": "zh-tw",
-            "title": "\u7e41\u9ad4\u4e2d\u6587",
-            "cn": "\u7e41\u9ad4\u4e2d\u6587"
+            "name": "змагатися",
+            "google": "vi",
+            "title": "Tiếng Việt",
+            "cn": "越南语"
+        },
+        {
+            "name": "ind",
+            "google": "ідентифікатор",
+            "title": "Бахаса Індонезія",
+            "cn": "印尼语"
+        },
+        {
+            "name": "ru",
+            "google": "ru",
+            "title": "Українська мова",
+            "cn": "俄语"
         }
     ]
 }
