@@ -132,10 +132,10 @@
 		},
 		"fileOperation": {
 			"cut": "Вирізати",
-			"rename": "Перейменувати",
+			"rename": "Переім.",
 			"permission": "Дозвіл",
 			"PMSN": "ПРАВА",
-			"compress": "Стиснути",
+			"compress": "Архів",
 			"open": "Відкрити",
 			"decompress": "Розпакувати"
 		},
