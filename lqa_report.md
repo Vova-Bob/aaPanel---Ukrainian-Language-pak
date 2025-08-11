@@ -30,3 +30,24 @@
 | accountState-721844-2 | Email адреса | Адреса електронної пошти | translation |
 | account_index_7 | Змінити інформацію про Ресурс | Змінити інформацію про ресурс | capitalization |
 | packageState-592272-3 | Максимальна кількість доменів Email | Максимальна кількість доменів пошти | translation |
+| Component.Feedback.index_7 | Зворотній зв'язок | Зворотний зв'язок | typo |
+| Component.Feedback.index_1 | aaPanel збір відгуків про запити | aaPanel збирає відгуки щодо запитів | grammar |
+| Component.Feedback.index_2 | Якщо ви зіткнулися з будь-якими проблемами або недосконалими функціями під час використання, будь ласка, опишіть їх | Якщо помітили проблеми чи недоліки, опишіть їх | conciseness |
+| Component.Feedback.index_3 | ваші проблеми або нам детально знадобиться, ми зробимо все можливе, щоб вирішити або покращити для | Ми переглянемо їх і постараємося усунути | conciseness |
+| Component.Feedback.index_4 | Ми приділяємо особливу увагу вашим відгукам про вимоги і проводимо регулярні щотижневі огляди вимог. Сподіваюся, я зможу допомогти вам краще | Щотижня розглядаємо пропозиції, щоб зробити продукт кращим | conciseness |
+| Component.Feedback.index_5 | Будь ласка, заповніть зворотний зв'язок | Будь ласка, заповніть форму | wording |
+| Component.Feedback.index_6 | Дякуємо вам за участь! | Дякуємо за участь! | conciseness |
+| Component.Pay.index_3 | Pro Feature | Професійна функція | translation |
+| Component.SelectPath.index_1 | Повернення товару | Назад | literal |
+| Component.Editor.index_1 | Підказки: Ctrl+F Пошук ключових слів, Ctrl+S Зберегти, Ctrl+H Пошук і заміна | Порада: Ctrl+F — пошук, Ctrl+S — зберегти, Ctrl+H — заміна | conciseness |
+| Component.Quota.index_4 | Натисніть кнопку змінити квоту Ємності | Натисніть, щоб змінити квоту | conciseness |
+| Component.Terminal.index_1 | З'єднання було розірвано, натискання клавіші Enter призведе до спроби повторного з'єднання! | З'єднання розірвано. Натисніть Enter, щоб під'єднатися знову. | conciseness |
+| Component.Terminal.index_2 | Спроба відновити підключення! | Відновлюємо з'єднання... | conciseness |
+| Component.UploadFile.index_1 | Клацніть або пеетягніть файл в область | Клацніть або перетягніть файл сюди | typo |
+| Component.UploadFile.index_2 | Підтримати імпорт формату {0} | Підтримуються формати {0} | grammar |
+| Component.UploadFile.index_7 | Розмір файлу [{0}] не може перевищувати {1}M | Файл [{0}] не має перевищувати {1}M | conciseness |
+| Component.UploadFile.index_8 | Очікування завантаження | Очікує завантаження | grammar |
+| Component.UploadFile.index_9 | Вивантаження успішне | Завантажено успішно | terminology |
+| Component.UploadFile.index_10 | Будь ласка, виберіть файл для завантаження | Виберіть файл для завантаження | conciseness |
+| Component.SoftState.index_1 | Ви впевнені, що вам потрібно {0} послугу {1} і продовжувати? | Ви впевнені, що хочете {0} службу {1}? | wording |
+| Component.Confirm.index_5 | Результат не вірний, спробуйте ще раз | Невірний результат, спробуйте ще раз | wording |
