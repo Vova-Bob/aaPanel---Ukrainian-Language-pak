@@ -28,11 +28,11 @@
 		"cancel": "Скасувати",
 		"confirm": "Підтвердити",
 		"uploadFile": "Завантажити файл",
-		"uploadFolder": "Завантажити теку",
+                "uploadFolder": "Завантажити каталог",
 		"downloadFile": "Завантажити файл",
 		"creating": "Створення спільного доступу, будь ласка, зачекайте",
 		"operation": "Операція",
-		"protection": "Захист файлу/теки",
+                "protection": "Захист файлу/каталогу",
 		"remarks": "Примітки",
 		"pathNotExists": "Шлях не існує",
 		"pathNotExistsConfirm": "Шлях [{path}] не існує. Створити його та перейти?",
@@ -42,7 +42,7 @@
 			"title": "Завантаження файлу",
 			"uploadSize": "Розмір завантаження:",
 			"averageSpeed": "Середня швидкість:",
-			"uploadSuccess": "Успішно завантажено:",
+                        "uploadSuccess": "Файл завантажено:",
 			"totalTime": "Загальний час:",
 			"fileName": "Назва файлу",
 			"fileSize": "Розмір файлу",
@@ -54,7 +54,7 @@
 			"statusFailed": "Помилка",
 			"confirmUpload": "Підтвердити завантаження",
 			"continueUpload": "Продовжити завантаження",
-			"dragFilesHere": "Перетягніть файли/теки сюди",
+                        "dragFilesHere": "Перетягніть файли/каталоги сюди",
 			"fileAlreadyExists": "Цей файл вже існує",
 			"cancelUpload": "Скасувати завантаження",
 			"cancelUploadConfirm": "Скасувати завантаження? Список буде очищено.",
@@ -77,7 +77,7 @@
 			"title": "Пошук у вмісті файлу",
 			"search": "Пошук",
 			"suffix": "Суфікс",
-			"folder": "Тека",
+                        "folder": "Каталог",
 			"subdir": "Підкаталоги",
 			"mode": "Режим",
 			"words": "Слова",
@@ -104,7 +104,7 @@
 			"fileOperations": "Операції з файлами",
 			"permissions": "Дозволи",
 			"createOptions": {
-				"newDirectory": "Нова тека",
+                                "newDirectory": "Новий каталог",
 				"newFile": "Новий порожній файл",
 				"softLink": "Симлінк"
 			},
@@ -117,16 +117,16 @@
 				"shareList": "Список спільного доступу",
 				"terminal": "Термінал",
 				"rootDirectory": "Кореневий каталог",
-				"fileProtection": "Захист файлу/теки"
+                                "fileProtection": "Захист файлу/каталогу"
 			},
 			"loading": {
-				"creatingDirectory": "Створення теки...",
+                                "creatingDirectory": "Створення каталогу...",
 				"creatingFile": "Створення файлу...",
 				"creatingSoftlink": "Створення симлінка...",
 				"deletingFavorite": "Видалення з обраного..."
 			},
 			"defaultNames": {
-				"untitledDirectory": "нова тека",
+                                "untitledDirectory": "новий каталог",
 				"untitledFile": "новий файл"
 			}
 		},
@@ -142,8 +142,8 @@
 		"contextMenu": {
 			"createCompression": "Стиснути",
 			"formatConversion": "Конвертація формату",
-			"newFolderFile": "Нова тека/файл",
-			"newFolder": "Нова тека",
+                        "newFolderFile": "Новий каталог/файл",
+                        "newFolder": "Новий каталог",
 			"newFile": "Новий файл",
 			"terminal": "Термінал",
 			"paste": "Вставити",
@@ -167,13 +167,13 @@
 				"addingToFavorites": "Додавання в обране..."
 			},
 			"messages": {
-				"addedToFavorites": "Успішно додано в обране.",
+                                "addedToFavorites": "Додано в обране.",
 				"copySuccess": "Скопійовано. Натисніть [Вставити] або Ctrl+V",
 				"cutSuccess": "Вирізано. Натисніть [Вставити] або Ctrl+V"
 			},
 			"defaultNames": {
-				"untitledFile": "новий файл",
-				"untitledDirectory": "нова тека"
+                                "untitledFile": "новий файл",
+                                "untitledDirectory": "новий каталог"
 			}
 		},
 		"tableController": {
@@ -184,9 +184,9 @@
 			"currentFile": "Поточний файл",
 			"protection": "Захист",
 			"extension": "Розширення",
-			"creatingDirectoryProtection": "Створення захисту теки...",
+                    "creatingDirectoryProtection": "Створення захисту каталогу...",
 			"executing": "Виконано",
-			"createSuccess": "Успішно створено",
+                    "createSuccess": "Створено",
 			"realtimeTaskQueue": "Черга завдань у реальному часі",
 			"deletingTask": "Видалення завдання...",
 			"afterTurningOffProtectionDir": "Після вимкнення захисту всі операції дозволені.",
@@ -219,7 +219,7 @@
 			}
 		},
 		"backupModal": {
-			"title": "Резервне копіювання теки",
+                        "title": "Резервне копіювання каталогу",
 			"backupButton": "Копіювати",
 			"confirmTitle": "Підтвердити копіювання?",
 			"enterBackupName": "Введіть назву резервної копії",
@@ -228,7 +228,7 @@
 			"backupPath": "Шлях копії",
 			"backupName": "Назва копії",
 			"deleteBackup": "Видалити копію",
-			"pleaseSelectPath": "Оберіть теку для копії",
+                        "pleaseSelectPath": "Оберіть каталог для копії",
 			"deletingBackup": "Видалення копії...",
 			"executingBackup": "Виконання копії...",
 			"deleteConfirm": "Після видалення копію неможливо відновити. Продовжити?"
@@ -248,12 +248,12 @@
 		"compressionModal": {
 			"compressType": "Тип стискання",
 			"compressPath": "Шлях архіву",
-			"compressFolder": "Стиснути теку [{name}]",
-			"compressFile": "Стиснути файл [{name}]",
-			"compressFolderAndFile": "Стиснути теку та файл [{names}]"
+                        "compressFolder": "Стиснути каталог [{name}]",
+                        "compressFile": "Стиснути файл [{name}]",
+                        "compressFolderAndFile": "Стиснути каталог та файл [{names}]"
 		},
 		"tableFooter": {
-			"summary": "Всього {dirNum} тек, {fileNum} файлів, Розмір: ",
+                    "summary": "Всього {dirNum} каталогів, {fileNum} файлів, Розмір: ",
 			"calculate": "Обчислити"
 		},
 		"terminalModal": {
@@ -262,7 +262,7 @@
 			"closeMessage": "Після закриття сесії SSH команди можуть бути перервані. Закрити?"
 		},
 		"shareModal": {
-			"setShareFolder": "Спільний доступ до теки [{name}]",
+                    "setShareFolder": "Спільний доступ до каталогу [{name}]",
 			"setShareFile": "Спільний доступ до файлу [{name}]",
 			"create": "Створити",
 			"shareName": "Назва доступу",
@@ -305,12 +305,12 @@
 			"warning": "Увага: видалені файли неможливо відновити, якщо кошик вимкнено!",
 			"emptyRecycleBin": "Очистити кошик",
 			"all": "Усе",
-			"folder": "Тека",
+                        "folder": "Каталог",
 			"file": "Файл",
 			"image": "Зображення",
 			"document": "Документ",
 			"database": "База даних",
-			"originalDirectory": "Початкова тека",
+                        "originalDirectory": "Початковий каталог",
 			"removalTime": "Час видалення",
 			"recover": "Відновити",
 			"deletePermanently": "Видалити назавжди",
@@ -324,7 +324,7 @@
 			"emptyConfirm": "Після очищення кошика всі файли буде видалено назавжди. Продовжити?",
 			"restoring": "Відновлення...",
 			"restoreFileTitle": "Відновити файл [{name}]",
-			"restoreFileConfirm": "Файл або тека з такою ж назвою буде перезаписана. Продовжити?",
+                        "restoreFileConfirm": "Файл або каталог з такою ж назвою буде перезаписано. Продовжити?",
 			"deleting": "Видалення...",
 			"deleteFileTitle": "Видалити файл [{name}]",
 			"deleteFileConfirm": "Небезпечна дія — після видалення файл буде знищено назавжди. Продовжити?"
@@ -382,17 +382,17 @@
 		"theme": "Тема",
 		"settings": "Налаштування",
 		"help": "Довідка",
-		"directory": "Тека",
+                "directory": "Каталог",
 		"back": "Назад",
 		"new": "Створити"
 	},
 	"delete": {
 		"deleteFile": "Видалити файл",
 		"recycleBinNotOpen": "Кошик вимкнено, відновлення буде неможливим. Продовжити?",
-		"confirmDelete": "Підтвердити видалення теки",
+                "confirmDelete": "Підтвердити видалення каталогу",
 		"moveToRecycleBin": "Після видалення файл переміститься у кошик. Продовжити?",
 		"deleting": "Видалення файлів...",
-		"deleteSuccess": "Файли успішно видалено",
+                "deleteSuccess": "Файли видалено",
 		"deleteFailed": "Не вдалося видалити файли"
 	},
 	"form": {
