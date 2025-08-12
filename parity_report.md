@@ -47,7 +47,8 @@
 
 ## BTPanel/static/vite/lang/uk/waf.json
 - `Waf.Overview.index_33`: "{0}\n{1}/Item, {2}%" → "{0}\n{1}/елемент, {2}%"
-- `Waf.Site.Config.title_5`: "Edit Site Rules [{0}] - [{1}]" → "Редагувати правила сайту [{0}] - [{1}]"
+- `Waf.Site.index_24`: "Please enter UserAgent" → "Будь ласка, введіть UserAgent"
+- `Waf.Site.Config.title_5`: "Edit Site Rules [{0}] - [{1}]" → "Редагування правил сайту [{0}] - [{1}]"
 - `Waf.Block.index_51`: "{0}s" → "{0} с"
 - `Waf.Rules.index_3`: "UA whitelist" → "Білий список UA"
 - `Waf.Rules.index_4`: "UA blacklist" → "Чорний список UA"
@@ -56,7 +57,7 @@
 - `Waf.Flow.Form.index_19`: "Status Code 503 (Service Unavailable)" → "Код стану 503 (Служба недоступна)"
 - `Waf.Setting.index_14`: "Restore default config" → "Відновити конфігурацію за замовчуванням"
 - `Waf.Setting.config_19`: "Spider pond" → "Пул павуків"
-- Translated values: 10
+- Translated values: 11
 
 ## BTPanel/static/vite/lang/uk/security.json
 - `Security.SSH.Basic.SSHKey.open_5`: "ED25519 (Recommend)" → "ED25519 (рекомендовано)"
@@ -68,4 +69,4 @@
 - `Database.PhpAdmin.index_12`: "{0} phpMyAdmin Service" → "Служба phpMyAdmin {0}"
 - Translated values: 2
 
-**Total translated values:** 40
+**Total translated values:** 41
