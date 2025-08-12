@@ -131,13 +131,13 @@
 			}
 		},
 		"fileOperation": {
-			"cut": "Вирізати",
+			"cut": "Виріз.",
 			"rename": "Переім.",
-			"permission": "Дозвіл",
-			"PMSN": "ПРАВА",
+                        "permission": "Права",
+                        "PMSN": "Pmsn",
 			"compress": "Архів",
 			"open": "Відкрити",
-			"decompress": "Розпакувати"
+			"decompress": "Розпак."
 		},
 		"contextMenu": {
 			"createCompression": "Стиснути",
