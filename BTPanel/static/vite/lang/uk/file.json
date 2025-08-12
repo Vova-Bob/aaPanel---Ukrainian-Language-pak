@@ -130,15 +130,17 @@
 				"untitledFile": "новий файл"
 			}
 		},
-		"fileOperation": {
-			"cut": "Виріз.",
-			"rename": "Переім.",
-                        "permission": "Права",
-                        "PMSN": "Pmsn",
-			"compress": "Архів",
-			"open": "Відкрити",
-			"decompress": "Розпак."
-		},
+                "fileOperation": {
+                        "open": "Відкр.",
+                        "copy": "Копія",
+                        "cut": "Виріз.",
+                        "rename": "Переім.",
+                        "permission": "Дозвіл",
+                        "PMSN": "Права",
+                        "compress": "Архів",
+                        "delete": "Видал.",
+                        "decompress": "Розпак."
+                },
 		"contextMenu": {
 			"createCompression": "Стиснути",
 			"formatConversion": "Конвертація формату",
