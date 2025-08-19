@@ -28,11 +28,11 @@
 		"cancel": "Скасувати",
 		"confirm": "Підтвердити",
 		"uploadFile": "Завантажити файл",
-                "uploadFolder": "Завантажити каталог",
+		"uploadFolder": "Завантажити каталог",
 		"downloadFile": "Завантажити файл",
 		"creating": "Створення спільного доступу, будь ласка, зачекайте",
 		"operation": "Операція",
-                "protection": "Захист файлу/каталогу",
+		"protection": "Захист файлу/каталогу",
 		"remarks": "Примітки",
 		"pathNotExists": "Шлях не існує",
 		"pathNotExistsConfirm": "Шлях [{path}] не існує. Створити його та перейти?",
@@ -42,7 +42,7 @@
 			"title": "Завантаження файлу",
 			"uploadSize": "Розмір завантаження:",
 			"averageSpeed": "Середня швидкість:",
-                        "uploadSuccess": "Файл завантажено:",
+			"uploadSuccess": "Файл завантажено:",
 			"totalTime": "Загальний час:",
 			"fileName": "Назва файлу",
 			"fileSize": "Розмір файлу",
@@ -54,7 +54,7 @@
 			"statusFailed": "Помилка",
 			"confirmUpload": "Підтвердити завантаження",
 			"continueUpload": "Продовжити завантаження",
-                        "dragFilesHere": "Перетягніть файли/каталоги сюди",
+			"dragFilesHere": "Перетягніть файли/каталоги сюди",
 			"fileAlreadyExists": "Цей файл вже існує",
 			"cancelUpload": "Скасувати завантаження",
 			"cancelUploadConfirm": "Скасувати завантаження? Список буде очищено.",
@@ -77,7 +77,7 @@
 			"title": "Пошук у вмісті файлу",
 			"search": "Пошук",
 			"suffix": "Суфікс",
-                        "folder": "Каталог",
+			"folder": "Каталог",
 			"subdir": "Підкаталоги",
 			"mode": "Режим",
 			"words": "Слова",
@@ -104,7 +104,7 @@
 			"fileOperations": "Операції з файлами",
 			"permissions": "Дозволи",
 			"createOptions": {
-                                "newDirectory": "Новий каталог",
+				"newDirectory": "Новий каталог",
 				"newFile": "Новий порожній файл",
 				"softLink": "Симлінк"
 			},
@@ -117,35 +117,33 @@
 				"shareList": "Список спільного доступу",
 				"terminal": "Термінал",
 				"rootDirectory": "Кореневий каталог",
-                                "fileProtection": "Захист файлу/каталогу"
+				"fileProtection": "Захист файлу/каталогу"
 			},
 			"loading": {
-                                "creatingDirectory": "Створення каталогу...",
+				"creatingDirectory": "Створення каталогу...",
 				"creatingFile": "Створення файлу...",
 				"creatingSoftlink": "Створення симлінка...",
 				"deletingFavorite": "Видалення з обраного..."
 			},
 			"defaultNames": {
-                                "untitledDirectory": "новий каталог",
+				"untitledDirectory": "новий каталог",
 				"untitledFile": "новий файл"
 			}
 		},
-                "fileOperation": {
-                        "open": "Відкр.",
-                        "copy": "Копія",
-                        "cut": "Виріз.",
-                        "rename": "Переім.",
-                        "permission": "Дозвіл",
-                        "PMSN": "Права",
-                        "compress": "Архів",
-                        "delete": "Видал.",
-                        "decompress": "Розпак."
-                },
+		"fileOperation": {
+			"cut": "Виріз.",
+			"rename": "Переім.",
+			"permission": "Дозвіл",
+			"PMSN": "Права",
+			"compress": "Архів",
+			"open": "Відкр.",
+			"decompress": "Розпак."
+		},
 		"contextMenu": {
 			"createCompression": "Стиснути",
 			"formatConversion": "Конвертація формату",
-                        "newFolderFile": "Новий каталог/файл",
-                        "newFolder": "Новий каталог",
+			"newFolderFile": "Новий каталог/файл",
+			"newFolder": "Новий каталог",
 			"newFile": "Новий файл",
 			"terminal": "Термінал",
 			"paste": "Вставити",
@@ -169,13 +167,13 @@
 				"addingToFavorites": "Додавання в обране..."
 			},
 			"messages": {
-                                "addedToFavorites": "Додано в обране.",
+				"addedToFavorites": "Додано в обране.",
 				"copySuccess": "Скопійовано. Натисніть [Вставити] або Ctrl+V",
 				"cutSuccess": "Вирізано. Натисніть [Вставити] або Ctrl+V"
 			},
 			"defaultNames": {
-                                "untitledFile": "новий файл",
-                                "untitledDirectory": "новий каталог"
+				"untitledFile": "новий файл",
+				"untitledDirectory": "новий каталог"
 			}
 		},
 		"tableController": {
@@ -186,9 +184,9 @@
 			"currentFile": "Поточний файл",
 			"protection": "Захист",
 			"extension": "Розширення",
-                    "creatingDirectoryProtection": "Створення захисту каталогу...",
+			"creatingDirectoryProtection": "Створення захисту каталогу...",
 			"executing": "Виконано",
-                    "createSuccess": "Створено",
+			"createSuccess": "Створено",
 			"realtimeTaskQueue": "Черга завдань у реальному часі",
 			"deletingTask": "Видалення завдання...",
 			"afterTurningOffProtectionDir": "Після вимкнення захисту всі операції дозволені.",
@@ -221,7 +219,7 @@
 			}
 		},
 		"backupModal": {
-                        "title": "Резервне копіювання каталогу",
+			"title": "Резервне копіювання каталогу",
 			"backupButton": "Копіювати",
 			"confirmTitle": "Підтвердити копіювання?",
 			"enterBackupName": "Введіть назву резервної копії",
@@ -230,7 +228,7 @@
 			"backupPath": "Шлях копії",
 			"backupName": "Назва копії",
 			"deleteBackup": "Видалити копію",
-                        "pleaseSelectPath": "Оберіть каталог для копії",
+			"pleaseSelectPath": "Оберіть каталог для копії",
 			"deletingBackup": "Видалення копії...",
 			"executingBackup": "Виконання копії...",
 			"deleteConfirm": "Після видалення копію неможливо відновити. Продовжити?"
@@ -250,12 +248,12 @@
 		"compressionModal": {
 			"compressType": "Тип стискання",
 			"compressPath": "Шлях архіву",
-                        "compressFolder": "Стиснути каталог [{name}]",
-                        "compressFile": "Стиснути файл [{name}]",
-                        "compressFolderAndFile": "Стиснути каталог та файл [{names}]"
+			"compressFolder": "Стиснути каталог [{name}]",
+			"compressFile": "Стиснути файл [{name}]",
+			"compressFolderAndFile": "Стиснути каталог та файл [{names}]"
 		},
 		"tableFooter": {
-                    "summary": "Всього {dirNum} каталогів, {fileNum} файлів, Розмір: ",
+			"summary": "Всього {dirNum} каталогів, {fileNum} файлів, Розмір: ",
 			"calculate": "Обчислити"
 		},
 		"terminalModal": {
@@ -264,7 +262,7 @@
 			"closeMessage": "Після закриття сесії SSH команди можуть бути перервані. Закрити?"
 		},
 		"shareModal": {
-                    "setShareFolder": "Спільний доступ до каталогу [{name}]",
+			"setShareFolder": "Спільний доступ до каталогу [{name}]",
 			"setShareFile": "Спільний доступ до файлу [{name}]",
 			"create": "Створити",
 			"shareName": "Назва доступу",
@@ -307,12 +305,12 @@
 			"warning": "Увага: видалені файли неможливо відновити, якщо кошик вимкнено!",
 			"emptyRecycleBin": "Очистити кошик",
 			"all": "Усе",
-                        "folder": "Каталог",
+			"folder": "Каталог",
 			"file": "Файл",
 			"image": "Зображення",
 			"document": "Документ",
 			"database": "База даних",
-                        "originalDirectory": "Початковий каталог",
+			"originalDirectory": "Початковий каталог",
 			"removalTime": "Час видалення",
 			"recover": "Відновити",
 			"deletePermanently": "Видалити назавжди",
@@ -326,7 +324,7 @@
 			"emptyConfirm": "Після очищення кошика всі файли буде видалено назавжди. Продовжити?",
 			"restoring": "Відновлення...",
 			"restoreFileTitle": "Відновити файл [{name}]",
-                        "restoreFileConfirm": "Файл або каталог з такою ж назвою буде перезаписано. Продовжити?",
+			"restoreFileConfirm": "Файл або каталог з такою ж назвою буде перезаписано. Продовжити?",
 			"deleting": "Видалення...",
 			"deleteFileTitle": "Видалити файл [{name}]",
 			"deleteFileConfirm": "Небезпечна дія — після видалення файл буде знищено назавжди. Продовжити?"
@@ -370,6 +368,45 @@
 			"restoring": "Відновлення файлів...",
 			"restoreSuccess": "Файл відновлено!",
 			"restoreFailed": "Не вдалося відновити файл!"
+		},
+		"permissionModal": {
+			"title": "Встановлення дозволів",
+			"setPermission": "Встановити дозвіл",
+			"backupsList": "Список резервних копій",
+			"noBackup": "Немає бекапів",
+			"backup": "Копіювати",
+			"restore": "Відновити",
+			"read": "Читання",
+			"write": "Запис",
+			"execute": "Виконати",
+			"permission": "Дозволи",
+			"owner": "Власник",
+			"group": "Група",
+			"public": "Публічний",
+			"applyToSubdir": "Застосувати до підкаталогу",
+			"fixAllPermissions": "Виправити всі дозволи до [Каталог: 755, Файл: 644]",
+			"fixPermissions": "Виправлення дозволів",
+			"confirmBackup": "Підтвердити резервне копіювання?",
+			"enterBackupName": "Введіть назву резервної копії",
+			"remarks": "Примітки",
+			"name": "Назва",
+			"backupTime": "Час копіювання",
+			"fixPermissionTitle": "Виправити дозвіл",
+			"fixPermissionNote": "Примітка: усі дозволи всередині файлу або каталогу буде встановлено на [Каталог: 755, Файл: 644]",
+			"confirmRestore": "Підтвердити відновлення",
+			"restoreWarning": "Відновлення перезапише поточні налаштування, Продовжити?",
+			"confirmDelete": "Підтвердити видалення",
+			"deleteWarning": "Після видалення копію неможливо відновити. Продовжити?",
+			"loading": {
+				"modifyingPermission": "Зміна дозволів, будь ласка, зачекайте...",
+				"backing": "Резервне копіювання, зачекайте...",
+				"fixingPermission": "Виправлення дозволів, будь ласка, зачекайте...",
+				"restoring": "Відновлення резервної копії, будь ласка, зачекайте...",
+				"deleting": "Видалення копії..."
+			}
+		},
+		"videoPlayerModal": {
+			"title": "Відеоплеєр"
 		}
 	},
 	"editor": {
@@ -384,32 +421,8 @@
 		"theme": "Тема",
 		"settings": "Налаштування",
 		"help": "Довідка",
-                "directory": "Каталог",
+		"directory": "Каталог",
 		"back": "Назад",
 		"new": "Створити"
-	},
-	"delete": {
-		"deleteFile": "Видалити файл",
-		"recycleBinNotOpen": "Кошик вимкнено, відновлення буде неможливим. Продовжити?",
-                "confirmDelete": "Підтвердити видалення каталогу",
-		"moveToRecycleBin": "Після видалення файл переміститься у кошик. Продовжити?",
-		"deleting": "Видалення файлів...",
-                "deleteSuccess": "Файли видалено",
-		"deleteFailed": "Не вдалося видалити файли"
-	},
-	"form": {
-		"urlAddress": "URL-адреса",
-		"downloadTo": "Завантажити до",
-		"fileName": "Назва файлу",
-		"fileSize": "Розмір файлу",
-		"fileStatus": "Статус файлу"
-	},
-	"help": {
-		"commonShortcuts": "Поширені комбінації клавіш",
-		"select": "Вибрати",
-		"cursorMovement": "Рух курсора",
-		"edit": "Редагування",
-		"selectAll": "Вибрати все",
-		"undo": "Скасувати"
 	}
 }

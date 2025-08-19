@@ -368,6 +368,45 @@
 			"restoring": "Files are being restored. Please wait a moment.",
 			"restoreSuccess": "Restore history files Operation succeeded!",
 			"restoreFailed": "Restore history files Operation failed!"
+		},
+		"permissionModal": {
+			"title": "Set Permission",
+			"setPermission": "Set permission",
+			"backupsList": "Backups list",
+			"noBackup": "No backup",
+			"backup": "Backup",
+			"restore": "Restore",
+			"read": "Read",
+			"write": "Write",
+			"execute": "Execute",
+			"permission": "Permission",
+			"owner": "Owner",
+			"group": "Group",
+			"public": "Public",
+			"applyToSubdir": "Apply to subdir",
+			"fixAllPermissions": "Fix all permissions to [Folder: 755, File: 644]",
+			"fixPermissions": "Fix permissions",
+			"confirmBackup": "Confirm backup?",
+			"enterBackupName": "Please enter the current backup name",
+			"remarks": "Remarks",
+			"name": "Name",
+			"backupTime": "Backup Time",
+			"fixPermissionTitle": "Fix Permission",
+			"fixPermissionNote": "Note: Under the file or folder all permissions will be fixed to [Folder: 755, File: 644]",
+			"confirmRestore": "Confirm Restore",
+			"restoreWarning": "Restore would overwrite the current settings, Continue?",
+			"confirmDelete": "Confirm Delete",
+			"deleteWarning": "The backup cannot be restored after deletion. Continue to delete?",
+			"loading": {
+				"modifyingPermission": "Modifying permissions, please wait...",
+				"backing": "Backing up, please wait...",
+				"fixingPermission": "Fixing permissions, please wait...",
+				"restoring": "Restoring backup, please wait...",
+				"deleting": "Deleting backup, please wait..."
+			}
+		},
+		"videoPlayerModal": {
+			"title": "Video Player"
 		}
 	},
 	"editor": {
@@ -385,29 +424,5 @@
 		"directory": "Directory",
 		"back": "Back",
 		"new": "New"
-	},
-	"delete": {
-		"deleteFile": "Delete File",
-		"recycleBinNotOpen": "Recycle bin is not currently open, delete file cannot be restored after, continue?",
-		"confirmDelete": "Confirm Delete Folder",
-		"moveToRecycleBin": "It will move to recycle bin after delete, continue?",
-		"deleting": "Files are being deleted. Please wait",
-		"deleteSuccess": "Files deleted successfully",
-		"deleteFailed": "Files failed to delete"
-	},
-	"form": {
-		"urlAddress": "URL Address",
-		"downloadTo": "Download To",
-		"fileName": "File Name",
-		"fileSize": "File Size",
-		"fileStatus": "File Status"
-	},
-	"help": {
-		"commonShortcuts": "Common Shortcuts",
-		"select": "Select",
-		"cursorMovement": "Cursor Movement",
-		"edit": "Edit",
-		"selectAll": "Select All",
-		"undo": "Cancel"
 	}
 }
