@@ -81,7 +81,10 @@
 			"index_77": "Req count",
 			"index_78": "WAF protection is disabled",
 			"index_79": "WAF is currently disabled. Your websites are no longer protected. ",
-			"index_80": "Enable protection now"
+			"index_80": "Enable protection now",
+			"index_81": "Real-time traffic: {0} KB/s",
+			"index_82": "Content type",
+			"index_83": "Cookie visits"
 		},
 		"Site": {
 			"index_1": "Intercept access from known malicious IPs of aaPanel",

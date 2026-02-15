@@ -73,7 +73,7 @@
 			"index_8": "Відображати",
 			"overviewTitle": "Огляд Ресурсів",
 			"containerCount": "Контейнер",
-			"spaceUsed": "Використано простір",
+			"spaceUsed": "Використаний простір ",
 			"composeCount": "Compose",
 			"composeProjects": "Docker Compose проекти",
 			"imageCount": "Образи",
