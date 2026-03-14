@@ -736,6 +736,32 @@
 			"index_16": "Global websocket are enabled and are not allowed to be disabled individually",
 			"index_17": "Delete reverse proxy project",
 			"index_18": "Replace all matched keywords"
+		},
+		"Git": {
+			"sshKey": "SSH Key",
+			"updateMethod": "Update method",
+			"selectKey": "Select key",
+			"generateNewKey": "Generate new key",
+			"keyList": "Key list",
+			"keyName": "Key name",
+			"sshKeyNamePlaceholder": "Please enter SSH key name",
+			"pleaseInputSshKeyName": "Please enter SSH key name",
+			"pleaseSelectKey": "Please select a key",
+			"generateNewKeySuccess": "New SSH key generated successfully",
+			"updateSshKeyTitle": "Update SSH Key",
+			"importExistingProjectTitle": "Import existing Git project",
+			"coverageData": "Coverage data",
+			"repoAddressPlaceholder": "Please enter repository address",
+			"branchPlaceholder": "Please select a branch",
+			"pleaseInputRepoAddress": "Please enter repository address first",
+			"resolveARecordTip": "Please first resolve the A record of this domain to the server IP address",
+			"repoExample": "e.g.  ",
+			"branchExample": "e.g. master",
+			"howToCreateWebsiteUsingGit": "How to create website using Git?",
+			"viewDocs": "View",
+			"deployScriptPlaceholder": "cd /www/wwwroot/aapanel.com\ngit pull origin master\necho \"\" | sudo -S service php8.3-fpm reload\necho \"🚀 Application deployed!\"",
+			"deleteGitConfigTitle": "Delete git configuration",
+			"deleteGitConfigContent": "You can delete the repository here. Note that both the .git directory and the deployment records will be deleted."
 		}
 	}
 }

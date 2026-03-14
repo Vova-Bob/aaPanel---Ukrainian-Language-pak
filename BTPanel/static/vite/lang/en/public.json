@@ -80,7 +80,8 @@
 		},
 		"Batch": {
 			"Del": "Batch delete",
-			"ChooseDel": "Please choose del"
+			"ChooseDel": "Please choose del",
+			"ConfirmWithDesc": "{0}, continue operation?"
 		},
 		"Confirm": {
 			"Title": "Tips",

@@ -736,6 +736,32 @@
 			"index_16": "Глобальний веб-сокет увімкнено, і його не можна вимкнути окремо",
 			"index_17": "Видалити зворотний проксі проект",
 			"index_18": "Замінити всі відповідні ключові слова"
+		},
+		"Git": {
+			"sshKey": "Ключ SSH",
+			"updateMethod": "Спосіб оновлення",
+			"selectKey": "Виберіть клавішу",
+			"generateNewKey": "Згенеруйте новий ключ",
+			"keyList": "Ключовий список",
+			"keyName": "Ключова назва",
+			"sshKeyNamePlaceholder": "Будь ласка, введіть ім'я SSH-ключа",
+			"pleaseInputSshKeyName": "Будь ласка, введіть ім'я SSH-ключа",
+			"pleaseSelectKey": "Будь ласка, виберіть ключ",
+			"generateNewKeySuccess": "Новий SSH-ключ успішно згенеровано",
+			"updateSshKeyTitle": "Оновлення ключа SSH",
+			"importExistingProjectTitle": "Імпортувати існуючий Git-проект",
+			"coverageData": "Дані про покриття",
+			"repoAddressPlaceholder": "Будь ласка, введіть адресу репозиторію",
+			"branchPlaceholder": "Будь ласка, оберіть відділення",
+			"pleaseInputRepoAddress": "Будь ласка, спочатку введіть адресу сховища",
+			"resolveARecordTip": "Будь ласка, спочатку перетворіть запис A цього домену в IP-адресу сервера",
+			"repoExample": "наприклад.  ",
+			"branchExample": "наприклад, майстер",
+			"howToCreateWebsiteUsingGit": "Як створити сайт за допомогою Git?",
+			"viewDocs": "Вигляд",
+			"deployScriptPlaceholder": "cd /www/wwwroot/aapanel.com\ngit pull origin master\necho \"\" | sudo -S service php8.3-fpm reload\necho \"🚀 Додаток розгорнуто!\"",
+			"deleteGitConfigTitle": "Видалення конфігурації git'а",
+			"deleteGitConfigContent": "Ви можете видалити сховище тут. Зверніть увагу, що буде видалено як каталог .git, так і записи розгортання."
 		}
 	}
 }
