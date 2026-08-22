@@ -11,12 +11,12 @@
 		"index_9": "Repair panel",
 		"index_10": "Verify and repair the panel, continue?",
 		"index_11": "Repair completed, please press Ctrl+F5 to refresh the cache!",
-		"index_12": "Running blocked",
-		"index_13": "Running slowly",
-		"index_14": "Running normally",
-		"index_15": "Smooth operation",
+		"index_12": "Overloaded",
+		"index_13": "High",
+		"index_14": "Moderate",
+		"index_15": "Normal",
 		"index_16": "CPU usage",
-		"index_17": "Core(s)",
+		"index_17": "Core | Cores",
 		"index_18": "CPU information",
 		"index_19": "More load information",
 		"index_20": "Process information of CPU TOP5",
@@ -101,6 +101,12 @@
 		"systemRestartReminder": "System Restart Reminder",
 		"serverRestartedAt": "Your server restarted at {time}.",
 		"iKnow": "I Know",
+		"memoEmpty": "Current content is empty, click to edit",
+		"SetupTabs": {
+			"softwareInstall": "Software install",
+			"projectCreate": "Project creation",
+			"newBadge": "New!!!"
+		},
 		"Install": {
 			"index_1_1": "Recommended to use the following one-click packages, please choose on demand or in {soft_} choose by yourself, recommended to install LEMP.",
 			"index_1_2": "Software Store",
@@ -157,7 +163,20 @@
 			"index_34": "Continue upgrade",
 			"index_35": "Continue fix",
 			"index_36": "Fix panel",
-			"index_37": "Repairing the panel resolves various unexpected issues"
+			"index_37": "Repairing the panel resolves various unexpected issues",
+			"index_38": "Delay update",
+			"index_39": "Notice",
+			"index_40": "Automatic updates are executed in the background. In rare cases (such as network issues or stalled processes), the panel service may become inaccessible after an update.",
+			"index_41": "If the panel cannot be accessed after updating, please run the command {cmd} manually in the server terminal and check whether the panel returns to normal.",
+			"index_42": "If the issue persists, Email us anytime: {email}",
+			"index_43": "Please set the scheduled update time:",
+			"index_44": "Update time:",
+			"index_45": "Calculation result:",
+			"index_46": "Please select the scheduled update time",
+			"index_47": "Please enter the calculation result",
+			"index_48": "Incorrect calculation result",
+			"index_49": "Set delayed update",
+			"index_50": "Delayed panel update"
 		},
 		"Restart": {
 			"index_1": "Restart server",
@@ -207,7 +226,7 @@
 			"index_22": "Dealing with malicious files",
 			"index_23": "OSS Scan",
 			"index_24": "Enable scanning of OSS mount directories",
-			"index_25": "Automatic interception switch",
+			"index_25": "Quarantine Files",
 			"index_26": "Dynamic Kill Switch",
 			"index_27": "The current system does not mount the OSS directory, so OSS scanning cannot be enabled",
 			"index_28": "Enable dynamic killing",
@@ -284,6 +303,446 @@
 			"index_99": "Waiting for scanning",
 			"ScanRules": "Scan Rules",
 			"DefaultRuleTag": "[Default]"
+		},
+		"SiteGuide": {
+			"common": {
+				"back": "Back",
+				"cancel": "Cancel",
+				"close": "Close",
+				"closeCurrent": "Close current",
+				"backHome": "Back home",
+				"closeGuide": "Close wizard",
+				"hide": "Hide",
+				"restore": "Restore",
+				"confirmTitle": "Hint",
+				"confirmContent": "After hiding, you can use aaPanel normally. Please do not repeat the current creation operation, as this may cause conflicts."
+			},
+			"layout": {
+				"title": "aaPanel Setup Wizard"
+			},
+			"message": {
+				"softwareInstallEntryUnavailable": "Software install entry is unavailable",
+				"projectPathUnavailable": "Project path unavailable"
+			},
+			"welcome": {
+				"title": "Welcome to aaPanel",
+				"description": "Let's set up your first project in minutes.",
+				"softwarePage": "Software page",
+				"lastConfig": "Last deployed: ",
+				"skipWizard": "Skip",
+				"options": {
+					"wordpress": {
+						"title": "Create WordPress site",
+						"description": "Deploy WordPress instantly with automatic database setup."
+					},
+					"importProject": {
+						"title": "Import an existing project",
+						"description": "Choose where your project is stored. aaPanel will suggest a project type for you to review."
+					},
+					"php": {
+						"title": "Create PHP site",
+						"description": "Instantly deploy PHP sites with automatic MySQL/MariaDB setup."
+					},
+					"node": {
+						"title": "Create Node.js project",
+						"description": "Quickly launch Next.js, Astro, Express, and more."
+					},
+					"proxy": {
+						"title": "Create Reverse Proxy",
+						"description": "Proxy public domain requests to your local ports or upstream servers."
+					},
+					"aiBuilder": {
+						"title": "AI Website Builder",
+						"description": "Build a stunning website in seconds with AI.",
+						"action": "Start building"
+					}
+				}
+			},
+			"importProject": {
+				"brand": "aaPanel Project Import",
+				"title": "Import an existing project",
+				"description": "Choose where your project is stored. aaPanel will suggest a project type for you to review.",
+				"steps": {
+					"source": "Choose a source",
+					"analyzing": "Analyzing project",
+					"review": "Review project",
+					"complete": "Import complete"
+				},
+				"sources": {
+					"archive": {
+						"title": "Upload archive",
+						"description": "Upload ZIP, TAR.GZ or TGZ files from your computer."
+					},
+					"remote": {
+						"title": "FTP / SFTP server",
+						"description": "Download a project directory from a remote file server."
+					},
+					"git": {
+						"title": "Git repository",
+						"description": "Clone a public or private Git repository and branch."
+					},
+					"localArchive": {
+						"title": "Local files",
+						"description": "Import a project folder or archive already stored on this server."
+					}
+				},
+				"source": {
+					"archive": {
+						"title": "Configure archive upload",
+						"description": "Upload your project package and choose its destination.",
+						"action": "Upload & analyze",
+						"projectArchive": "Project archive",
+						"dropTitle": "Drop an archive here or choose a file",
+						"dropHint": "ZIP, TAR.GZ or TGZ · Up to 5 GB",
+						"localHint": "The directory on this aaPanel server where the archive will be extracted.",
+						"cleanup": "Import cleanup",
+						"cleanupHint": "Remove temporary files after import"
+					},
+					"remote": {
+						"title": "Connect to FTP / SFTP",
+						"description": "Enter the remote connection and destination details.",
+						"action": "Connect & analyze",
+						"testConnectedAndSelectDirectory": "Test Connection and Select Directory",
+						"authentication": "Authentication",
+						"passwordAuthentication": "Password",
+						"privateKey": "Private key",
+						"privateKeyPlaceholder": "Paste the complete SSH private key content",
+						"remoteHint": "Select the project directory on the remote server.",
+						"localHint": "Files will be copied into this directory."
+					},
+					"git": {
+						"title": "Clone a Git repository",
+						"description": "Configure the repository, authentication and destination.",
+						"action": "Clone & analyze",
+						"repositoryUrl": "Repository URL",
+						"branch": "Branch or tag",
+						"branchPlaceholder": "Test Connection and Select Branch",
+						"testConnection": "Test connection",
+						"testAgain": "Test again",
+						"connectionSuccessful": "Connection successful.",
+						"branchesFound": "{0} branches found.",
+						"verifyRepository": "Verify repository access to load available branches.",
+						"noBranches": "No branches or tags were found in this repository.",
+						"authentication": "Authentication",
+						"public": "Public",
+						"token": "Token",
+						"sshKey": "SSH Key",
+						"copySshKey": "Copy SSH key",
+						"publicHint": "No credentials required.",
+						"accessToken": "Access token",
+						"privateKey": "Private key",
+						"chooseKey": "Choose a .pem or .key file",
+						"passphrase": "Key passphrase",
+						"localHint": "The repository will be cloned into this directory.",
+						"cloneDepth": "Clone depth",
+						"latestCommitOnly": "Latest commit only",
+						"fullGitHistory": "Full Git history",
+						"shallowClone": "Shallow clone"
+					},
+					"localArchive": {
+						"title": "Configure local source",
+						"description": "Choose a project folder or archive stored on this aaPanel server.",
+						"action": "Analyze source",
+						"archiveLocation": "Project source",
+						"archiveHint": "Select a project folder or a ZIP, TAR.GZ or TGZ archive from the current server.",
+						"projectDirectory": "Project directory",
+						"projectDirectoryHint": "The project will be created in this directory."
+					}
+				},
+				"common": {
+					"back": "Back",
+					"browse": "Browse",
+					"cancel": "Cancel",
+					"choose": "Choose",
+					"configure": "Configure",
+					"disabled": "Disabled",
+					"edit": "Edit",
+					"enabled": "Enabled",
+					"localDirectory": "Local directory",
+					"notSet": "Not set",
+					"optional": "Optional",
+					"password": "Password",
+					"port": "Port",
+					"protocol": "Protocol",
+					"remoteDirectory": "Remote directory",
+					"save": "Use this directory",
+					"select": "Select",
+					"server": "Server",
+					"username": "Username"
+				},
+				"analyzing": {
+					"title": "Analyzing your project",
+					"preparing": "Preparing the source files...",
+					"reading": "Reading project files and dependencies...",
+					"checking": "Checking configuration and database backups...",
+					"detecting": "Detecting the project type and runtime...",
+					"complete": "Analysis complete. Preparing the review..."
+				},
+				"review": {
+					"title": "Review project settings",
+					"description": "Confirm the detected project type and configure how the project will be created.",
+					"detectedFrom": "Detected from {0}",
+					"projectType": "Project type",
+					"projectTypeHint": "Automatically detected based on project files. If the result is incorrect, please select the correct project type.",
+					"domain": "Domain name",
+					"applySsl": "Apply for SSL",
+					"domainRequiredHint": "Required for PHP and Static websites.",
+					"domainOptionalHint": "Optional. Leave blank if the application will be accessed by IP and port.",
+					"projectName": "Project name",
+					"phpVersion": "PHP version",
+					"nodeVersion": "Node.js version",
+					"startCommand": "Start command",
+					"applicationPort": "Application port",
+					"dependencyInstallation": "Dependency installation",
+					"dependencyInstallationHint": "Reinstalling dependencies removes the existing node_modules directory and installs the project packages again for the current server. Existing lock files are preserved.",
+					"installDependencies": "Install dependencies",
+					"importAction": "Import project",
+					"importing": "Importing...",
+					"types": {
+						"php": "PHP Website",
+						"node": "Node.js Project",
+						"static": "Static Website"
+					}
+				},
+				"database": {
+					"title": "Database import",
+					"description": "Use a detected backup or upload another SQL file.",
+					"detectedHint": "A MySQL backup was found in the project files.",
+					"notDetectedHint": "No SQL backup was detected. You can upload one manually.",
+					"selectFile": "Select a database backup",
+					"importTo": "Will import to {0}",
+					"editSettings": "Edit settings",
+					"backupSource": "Backup source",
+					"detected": "Detected backup",
+					"useDetected": "Select detected backup",
+					"uploadAnother": "Upload database backup",
+					"sqlFile": "SQL backup file",
+					"uploadPlaceholder": "Choose .sql or .sql.gz",
+					"uploadHint": "Supports SQL, SQL.GZ or GZ files",
+					"configuration": "Database configuration",
+					"name": "Database name",
+					"user": "Database user",
+					"generate": "Generate",
+					"charset": "Character set",
+					"updateConfig": "Update project configuration",
+					"updateConfigHint": "Apply the new database credentials to the detected configuration file.",
+					"doNotImport": "Do not import database",
+					"saveSettings": "Save settings"
+				},
+				"directory": {
+					"currentServer": "Current aaPanel server",
+					"localTitle": "Select local directory",
+					"remoteTitle": "Select remote directory",
+					"empty": "No child directories in this simulated location",
+					"localHint": "Choose the destination directory on this server.",
+					"remoteHint": "Choose the source directory on the remote server."
+				},
+				"summary": {
+					"title": "Import summary",
+					"description": "Review before creating the project",
+					"source": "Source",
+					"sourceItem": "Source item",
+					"detectedAs": "Detected as",
+					"destination": "Destination",
+					"domain": "Domain",
+					"database": "Database",
+					"targetDatabase": "Target database",
+					"configUpdate": "Config update",
+					"notice": "No existing project will be changed until you confirm the import.",
+					"sources": {
+						"archive": "Uploaded archive",
+						"remote": "{0} server",
+						"git": "Git repository",
+						"localArchive": "Local folder or archive"
+					}
+				},
+				"success": {
+					"title": "Project imported successfully",
+					"description": "The project is now available in your aaPanel website list.",
+					"domain": "Domain",
+					"project": "Project",
+					"type": "Type",
+					"path": "Path",
+					"database": "Database",
+					"notImported": "Not imported",
+					"status": "Status",
+					"ready": "Ready",
+					"importAnother": "Import another",
+					"viewProject": "View project"
+				},
+				"validation": {
+					"archiveRequired": "Please select a project archive",
+					"localArchiveRequired": "Please select a local project folder or archive",
+					"projectDirectoryRequired": "Project directory cannot be empty",
+					"archiveFormat": "Select a ZIP, TAR.GZ or TGZ archive",
+					"archiveSize": "The archive must be 5 GB or smaller",
+					"localDirectoryRequired": "Local directory cannot be empty",
+					"serverRequired": "Server and port are required",
+					"credentialsRequired": "Username and password are required",
+					"remoteDirectoryRequired": "Remote directory cannot be empty",
+					"repositoryRequired": "Repository URL cannot be empty",
+					"branchRequired": "Please test the connection and select a branch",
+					"tokenRequired": "Access token cannot be empty",
+					"privateKeyRequired": "Please select an SSH key",
+					"privateKeyContentRequired": "Private key content cannot be empty",
+					"usernameRequired": "Username cannot be empty",
+					"passwordRequired": "Password cannot be empty",
+					"domainRequired": "Domain cannot be empty for this project type",
+					"projectNameRequired": "Project name cannot be empty",
+					"startCommandRequired": "Start command cannot be empty",
+					"portRequired": "Application port cannot be empty",
+					"portInvalid": "Enter a valid port between 1 and 65535",
+					"databaseFileRequired": "Please select a database backup",
+					"databaseCredentialsRequired": "Database name, user and password are required",
+					"databaseFormat": "Select an SQL, SQL.GZ or GZ backup file",
+					"databaseNameExists": "The database name already exists. Please change the Database name."
+				}
+			},
+			"form": {
+				"wordpress": {
+					"title": "Configure WordPress site",
+					"description": "Configure your website details and deploy WordPress with one click.",
+					"submit": "Create WordPress site"
+				},
+				"proxy": {
+					"title": "Deploy reverse proxy",
+					"description": "Map your public domain to an internal port or remote server.",
+					"submit": "Deploy reverse proxy"
+				},
+				"php": {
+					"title": "Deploy PHP site",
+					"description": "Configure your website domain and select the target PHP engine.",
+					"submit": "Create PHP site"
+				},
+				"node": {
+					"title": "Launch Node.js project",
+					"description": "Configure your project details and select the target Node.js runtime.",
+					"submit": "Launch Node.js project"
+				}
+			},
+			"fields": {
+				"domainName": "Domain name",
+				"domainTip": "If you don't have a domain name, you can use your server IP instead.",
+				"autoEnableSsl": "Auto-enable Let's Encrypt SSL",
+				"wordpressDomainPlaceholder": "Enter your website domain (e.g., domain.com)",
+				"websiteTitle": "Website title",
+				"websiteTitlePlaceholder": "Enter your website title",
+				"language": "Language",
+				"adminEmail": "Admin email",
+				"phpDomainPlaceholder": "Enter website domain (e.g., phpsite.com)",
+				"phpEngine": "PHP engine",
+				"phpEngineHint": "Missing versions will install automatically",
+				"installMysql": "Install & configure MySQL/MariaDB",
+				"databaseEngine": "Database engine",
+				"username": "Username",
+				"password": "Password",
+				"projectName": "Project name",
+				"projectNamePlaceholder": "Only letters and numbers",
+				"runtimeVersion": "Runtime version",
+				"nodeRecommendedVersion": "Node.js 24.15.0 (Recommended)",
+				"runtimeInstalledVersion": "{0} (Installed)",
+				"packageManager": "Package manager",
+				"frameworkTemplate": "Framework template",
+				"mappingDomain": "Mapping domain",
+				"nodeDomainPlaceholder": "node.example.com",
+				"localPort": "Local port",
+				"publicDomain": "Public domain",
+				"proxyDomainPlaceholder": "Enter public domain (e.g., app.yourdomain.com)",
+				"targetDestination": "Target destination",
+				"targetHostPlaceholder": "Target IP or domain (e.g., 127.0.0.1)",
+				"httpHostHeader": "HTTP host header",
+				"proxyCache": "Proxy cache",
+				"enableProxyCaching": "Enable proxy caching"
+			},
+			"validation": {
+				"domainRequired": "Domain cannot be empty",
+				"domainInvalid": "Please enter a valid domain",
+				"websiteTitleRequired": "Website title cannot be empty",
+				"languageRequired": "Please select a language",
+				"emailRequired": "Email cannot be empty",
+				"emailInvalid": "Please enter a valid email",
+				"phpVersionRequired": "Please select at least one PHP version",
+				"mysqlVersionRequired": "Please select a MySQL version",
+				"databaseUserRequired": "Database user cannot be empty",
+				"databasePasswordRequired": "Database password cannot be empty",
+				"projectNameInvalid": "Project name can only contain letters and numbers",
+				"nodeVersionRequired": "Please select a Node.js version",
+				"frameworkRequired": "Please select a framework",
+				"packageManagerRequired": "Please select a package manager",
+				"portInvalid": "Please enter a valid port",
+				"portFrameworkMismatch": "Port does not match the selected framework",
+				"protocolRequired": "Please select a protocol",
+				"targetHostRequired": "Target host cannot be empty"
+			},
+			"progress": {
+				"processing": "Processing",
+				"finalizingDeployment": "Finalizing deployment",
+				"keepPanelOpen": "Please keep this panel open. Applying final website state.",
+				"systemCompilerEngine": "Progress",
+				"percentCompleted": "{0}% complete",
+				"deploymentFailed": "Deployment failed",
+				"deploySuccess": "Deploy successful",
+				"projectTitles": {
+					"wordpress": "WordPress",
+					"php": "PHP",
+					"nodeFramework": "Node.js",
+					"proxy": "Reverse Proxy"
+				}
+			},
+			"success": {
+				"title": "Success! Your website is officially live.",
+				"description": "Deployment completed successfully.",
+				"configurationParameters": "Deployment details",
+				"active": "Active",
+				"copyPassword": "Copy password",
+				"nodeRuntime": "Node.js runtime",
+				"localPortValue": "Port {0}",
+				"enabled": "Enabled",
+				"disabled": "Disabled",
+				"publicDomainConnection": "Site URL",
+				"administratorUsername": "Admin username",
+				"adminAccessPassword": "Admin password",
+				"databaseConfigs": "Database details",
+				"status": "Status",
+				"created": "Created",
+				"unknown": "Unknown",
+				"db": "DB",
+				"usr": "User",
+				"pass": "Pass",
+				"mappingProxyHost": "Mapping proxy host",
+				"targetDestinationLink": "Target destination",
+				"proxyStaticCache": "Proxy cache",
+				"connectionUrl": "Site URL",
+				"phpSocketVersion": "PHP version",
+				"databaseEngineConfigs": "{0} details",
+				"accessUrl": "Site URL",
+				"projectDirectory": "Project directory",
+				"engineRuntime": "Runtime",
+				"publicDomain": "Public domain",
+				"templateAndScript": "Template and script",
+				"localPort": "Local port",
+				"oneClickLogin": "One-Click Login",
+				"openWebsite": "Open website",
+				"quickUploadDirectory": "Quick upload directory",
+				"openApplication": "Open application",
+				"browseFolderPath": "Browse folder path",
+				"tips": {
+					"wordpressPrefix": "Tip: WordPress configuration, security, file management, etc. can be found in ",
+					"wordpressSuffix": ".",
+					"phpPrefix": "Tip: Advanced configuration, security, file management, can be found in ",
+					"phpSuffix": ".",
+					"proxyPrefix": "Tip: Advanced configuration and security settings can be managed in ",
+					"proxySuffix": ".",
+					"nodePrefix": "Tip: Advanced configuration, security, file management, can be found in ",
+					"nodeSuffix": ".",
+					"tipLabel": "Tip:",
+					"default": "Advanced configurations, security firewalls, directory files, and complete lifecycle management can be fine-tuned inside the dedicated website project dashboard later.",
+					"wordpressButton": "WP-Toolkit",
+					"phpButton": "Website - PHP Project",
+					"proxyButton": "Website - Proxy Project",
+					"nodeButton": "Website - Node.js Project"
+				}
+			}
 		}
 	}
 }

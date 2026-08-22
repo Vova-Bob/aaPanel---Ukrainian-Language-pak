@@ -88,6 +88,9 @@
 			"Enable": "Enable",
 			"Disable": "Close"
 		},
+		"AlarmTask": {
+			"ConfigurationTask": "Configuration alarm task"
+		},
 		"Table": {
 			"Ps": "Remark",
 			"Status": "Status",
@@ -110,6 +113,7 @@
 			"Disable": "Disable",
 			"Running": "Running",
 			"Stopped": "Stopped",
+			"NotConfigured": "Not configured",
 			"Paused": "Paused",
 			"TurnOn": "Turn on",
 			"TurnOff": "Turn off",

@@ -50,8 +50,8 @@
 			"index_46": "(*Only shows TOP 5 coordinates)",
 			"index_47": "Requests",
 			"index_48": "Blocks",
-			"index_49": "Attacked domains TOP10",
-			"index_50": "Traffic ranking TOP10",
+			"index_49": "Attacked domains TOP 10",
+			"index_50": "Traffic ranking TOP 10",
 			"index_51": "Traffic ranking TOP100",
 			"index_52": "IP inclusion criteria:",
 			"index_53": "Dynamic requests exceed 100 and dynamic traffic exceeds 512KB",
@@ -63,7 +63,7 @@
 			"index_59": "URL inclusion criteria:",
 			"index_60": "Current URL traffic exceeds 1MB and visits exceed 100",
 			"index_61": "Current URL visits exceed 2000",
-			"index_62": "Visited pages TOP10",
+			"index_62": "Visited pages TOP 10",
 			"index_63": "Visited pages TOP100",
 			"index_64": "Domain",
 			"index_65": "IP",
@@ -84,7 +84,54 @@
 			"index_80": "Enable protection now",
 			"index_81": "Real-time traffic: {0} KB/s",
 			"index_82": "Content type",
-			"index_83": "Cookie visits"
+			"index_83": "Cookie visits",
+			"index_84": "Time filter",
+			"index_85": "Last updated",
+			"index_86": "Today's security overview",
+			"index_87": "Protection active",
+			"index_88": "Real-time operation",
+			"index_89": "Last 5 minutes · 10-second granularity",
+			"index_90": "Real-time QPS",
+			"index_91": "Real-time website traffic",
+			"index_92": "Real-time origin latency",
+			"index_93": "req/s",
+			"index_94": "Request and traffic trends",
+			"index_95": "Today 00:00 to now · 20-minute granularity",
+			"index_96": "AI summary",
+			"index_97": "Hourly traffic trend",
+			"index_98": "Client distribution",
+			"index_99": "Browser / client",
+			"index_100": "Operating system",
+			"index_102": "Status code distribution",
+			"index_103": "Yesterday {0}",
+			"index_104": "Yesterday {0}",
+			"index_105": "Data updates every 60 seconds",
+			"index_106": "Page views (PV)",
+			"index_107": "Unique visitors (UV)",
+			"index_108": "Unique IPs",
+			"index_109": "World",
+			"index_110": "China",
+			"index_111": "Request source ranking",
+			"index_112": "Blocked source ranking",
+			"index_113": "Total {0}",
+			"index_114": "Sorted by request count",
+			"index_115": "Status code",
+			"index_116": "Requests",
+			"index_117": "Percentage",
+			"index_118": "Referrer TOP 10",
+			"index_119": "Custom time",
+			"index_120": "Direct",
+			"index_121": "Other",
+			"index_122": "Traffic distribution",
+			"index_123": "Dynamic",
+			"index_124": "Static",
+			"index_125": "Data details",
+			"index_126": "Client distribution details",
+			"index_127": "Name",
+			"index_128": "Referrer Top 50",
+			"index_129": "Referrer",
+			"index_130": "Unknown",
+			"index_131": "TOP 10"
 		},
 		"Site": {
 			"index_1": "Intercept access from known malicious IPs of aaPanel",
@@ -582,6 +629,20 @@
 			"index_31": "Or",
 			"index_32": "Verification method"
 		},
+		"Exclusive": {
+			"index_1": "Exclusive Rules",
+			"index_2": "Exclusive rules are disabled",
+			"index_3": ". Enable them to enhance protection for WordPress, DedeCMS, and other applications.",
+			"index_4": "Enable now",
+			"index_5": "Rule ID",
+			"index_6": "Name",
+			"index_7": "Description",
+			"index_8": "Status",
+			"index_9": "After enabling exclusive rules, they will apply to all websites. If false positives occur, you can disable individual rules.",
+			"index_10": "Exclusive rules are adapted for major CMSs based on each program's characteristics. Most of them target remote code execution.",
+			"index_11": "Rule updates: at this stage, updating the firewall also updates the rules. Manual rule updates will be added later.",
+			"index_12": "Future update plan: targeted updates based on various CVE vulnerabilities."
+		},
 		"Map": {
 			"index_1": "Attack map details (map for reference only)",
 			"index_2": "Longitude: {0}",
@@ -876,7 +937,9 @@
 			"config_205": "Online Edit [{0}]",
 			"config_206": "Edit rule [{0}]",
 			"config_207": "Filter out penetration attacks using cookies",
-			"config_208": "Filter penetration testing for common scan testing tools"
+			"config_208": "Filter penetration testing for common scan testing tools",
+			"config_209": "Read-only Mode",
+			"config_210": "Read-only mode. Do not enable it outside attack-defense drills. Login, payment, search, registration, comments, and other features may be affected."
 		},
 		"Install": {
 			"index_1": "Tip: This page can be turned off in the panel settings",
@@ -888,6 +951,107 @@
 			"index_7": "Stop hackers",
 			"index_8": "Install now",
 			"index_9": "Buy now"
+		},
+		"ProtectionScreen": {
+			"defaultTitle": "aaPanel WAF Dashboard",
+			"common": {
+				"live": "Live",
+				"dashboardLabel": "WAF protection dashboard"
+			},
+			"header": {
+				"kicker": "Security operations",
+				"overview": "Global web application security overview",
+				"protected": "Live data monitoring"
+			},
+			"setting": {
+				"title": "Dashboard Settings",
+				"monitorTitle": "Monitor title",
+				"monitorTitlePlaceholder": "Enter monitor title",
+				"screenVersion": "Dashboard version",
+				"serverCoords": "Server Coordinates",
+				"longitude": "Longitude",
+				"longitudePlaceholder": "Enter longitude, e.g. 116.395645",
+				"latitude": "Latitude",
+				"latitudePlaceholder": "Enter latitude, e.g. 39.929986",
+				"currentCoords": "Coordinates",
+				"locationTip": "The location is for reference only and may not be accurate.",
+				"titleRequired": "Enter monitor title",
+				"saveFailed": "Save failed",
+				"invalidCoords": "Enter valid longitude and latitude",
+				"saveSuccess": "Saved successfully"
+			},
+			"stats": {
+				"todayRequests": "Req Today",
+				"maliciousRequests": "Malicious Req",
+				"totalIntercepts": "Total Blocks",
+				"todayIntercepts": "Blocks Today"
+			},
+			"actions": {
+				"countdownRefresh": "Countdown refresh",
+				"countdown": "Countdown",
+				"fullscreen": "Fullscreen",
+				"setting": "Settings"
+			},
+			"realtime": {
+				"title": "Live Web Defense",
+				"description": "Ranked by blocked request count",
+				"rankIp": "Rank / IP address",
+				"country": "Country",
+				"hits": "Hits",
+				"empty": "No real-time protection data"
+			},
+			"attackDetail": {
+				"attackIp": "Attack IP",
+				"attackType": "Attack type",
+				"domain": "Domain",
+				"time": "Time",
+				"selected": "Selected attack",
+				"next": "Next",
+				"empty": "No attack details"
+			},
+			"chart": {
+				"realtimeQps": "Real-time QPS",
+				"time": "Time",
+				"qps": "QPS",
+				"sevenDayTrend": "Blocked Requests — Last 7 Days",
+				"trendDescription": "Daily count of blocked malicious requests",
+				"sevenDayTotal": "7-day total",
+				"noTrendData": "No trend data",
+				"qpsDescription": "Live request rate updated every 3 seconds",
+				"noQpsData": "No QPS data",
+				"peak": "Peak",
+				"average": "Average",
+				"samples": "Samples",
+				"attackTime": "Attack time",
+				"attackCount": "Attack count",
+				"interceptTypeToday": "Block Types",
+				"ruleMatrix": "Rule matrix",
+				"typeDescription": "Distribution of threats across matched rules",
+				"blocked": "Blocked",
+				"blockCount": "{0} blocks",
+				"dominantSignal": "Dominant signal",
+				"ofTodayBlocks": "of today's blocks",
+				"pieValue": "{0} times, {1}%",
+				"noInterceptDataToday": "No block data today"
+			},
+			"map": {
+				"activityTitle": "Global attack activity",
+				"activityDescription": "Live activity between attack sources and your protected origin",
+				"attackSource": "Attack source",
+				"protectedOrigin": "Protected origin",
+				"country": "Country",
+				"count": "Count",
+				"ipTotal": "Total IPs",
+				"unknown": "Unknown"
+			},
+			"analytics": {
+				"label": "WAF security analytics"
+			},
+			"footer": {
+				"engine": "aaPanel WAF · Protection engine",
+				"lastLiveRefresh": "Last live refresh {0}",
+				"activeRegions": "{0} attack regions active"
+			}
 		},
 		"Api": {
 			"overview_1": "One-click activation in progress, please wait...",
@@ -971,7 +1135,9 @@
 			"setting_75": "Adding prohibited words, please wait...",
 			"setting_76": "Importing prohibited words, please wait...",
 			"setting_77": "Deleting prohibited words, please wait...",
-			"setting_78": "Clearing prohibited words, please wait..."
+			"setting_78": "Clearing prohibited words, please wait...",
+			"exclusive_79": "Setting rule status, please wait...",
+			"exclusive_80": "Setting status, please wait..."
 		}
 	}
 }

@@ -28,6 +28,7 @@
 			"app_list_16": "Manage website",
 			"app_list_17": "Backup",
 			"app_list_18": "One-click login",
+			"app_list_19": "Terminal",
 			"app_category_0": "Installed",
 			"app_category_1": "More ",
 			"Install": {
@@ -86,7 +87,9 @@
 			"filterAll": "All",
 			"filterRunning": "Running",
 			"filterStopped": "Stopped",
-			"searchPlaceholder": "Search container name or image name"
+			"searchPlaceholder": "Search container name or image name",
+			"goToApp": "Go to App Store to install",
+			"pullCloudImage": "Pull image from the cloud"
 		},
 		"Container": {
 			"index_1": "Create Container",
@@ -348,11 +351,12 @@
 					"index_23": "Please fill in the certificate content",
 					"index_24": "Domain Name",
 					"index_25": "Expiration Date",
-					"index_26": "Brand"
+					"index_26": "Brand",
+					"index_27": "Free Cert"
 				}
 			},
 			"terminal": {
-				"index_1": "Please select Shell",
+				"index_1": "Shell",
 				"index_2": "Terminal",
 				"index_3": "Open Terminal",
 				"index_4": "Execute with Root Privileges"
@@ -554,7 +558,7 @@
 			"index_47": "Template Name",
 			"index_48": "Please enter template name",
 			"index_49": "Notes",
-			"index_50": "Adding logs - Please be patient and do not close this window"
+			"index_50": "Creating Docker Compose - Please be patient and do not close this window"
 		},
 		"Compose": {
 			"index_1": "Add container project",
@@ -577,7 +581,10 @@
 				"index_5": "Please select container template",
 				"index_6": "Please enter template name",
 				"index_7": "Add Yaml template"
-			}
+			},
+			"taskLogsTitle": "Creating Docker Compose...",
+			"taskSuccess": "Project added successfully",
+			"taskFailed": "Failed to add project"
 		},
 		"Template": {
 			"index_4": "Template name",

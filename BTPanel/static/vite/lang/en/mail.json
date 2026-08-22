@@ -452,6 +452,84 @@
 			"index_42": "Editing, please wait...",
 			"index_43": "Setting up types, please wait...",
 			"index_44": "Creating, please wait..."
+		},
+		"BillionMail": {
+			"Service": {
+				"name": "Billion Mail",
+				"latest": "latest",
+				"checking": "Checking",
+				"stopped": "Stopped",
+				"running": "Running",
+				"version": "Version: {0}"
+			},
+			"Preview": {
+				"paused": "BillionMail is paused",
+				"settingsTitle": "Billion Mail Settings"
+			},
+			"Api": {
+				"starting": "Starting, please wait...",
+				"stopping": "Stopping, please wait...",
+				"restarting": "Restarting, please wait...",
+				"uninstalling": "Uninstalling, please wait..."
+			},
+			"Install": {
+				"title": "Install BillionMail",
+				"heroLine1": "Self-Hosted Email Marketing",
+				"heroLine2": "Made Simple",
+				"description": "Launch your own email server and marketing platform with a few clicks. Manage campaigns, mailing lists, analytics, and deliverability while keeping full ownership of your infrastructure.",
+				"featureCampaigns": "Campaigns",
+				"featureMailingLists": "Mailing Lists",
+				"featureAnalytics": "Analytics",
+				"featureDeliverability": "Deliverability",
+				"featureOwnership": "Full Ownership",
+				"installBillionMail": "Install BillionMail",
+				"installClassicMail": "Install ClassicMail",
+				"versionTag": "Latest / {0} / Docker",
+				"recommended": "Recommended",
+				"legacy": "Legacy",
+				"classicName": "ClassicMail",
+				"billionMailDesc": "Modern self-hosted email marketing platform with full analytics and campaign management.",
+				"classicMailDesc": "Stable legacy email server for older systems. Basic sending, limited to essential features.",
+				"legacyCompatibility": "Legacy compatibility",
+				"bannerPreview": "BillionMail dashboard preview"
+			},
+			"Guide": {
+				"title": "BillionMail Installation",
+				"minimize": "Minimize",
+				"close": "Close",
+				"restore": "Restore",
+				"startInstall": "Start Install",
+				"config": "Config",
+				"installer": "BillionMail installer",
+				"completed": "{0}% completed",
+				"failed": "Installation failed. Please check the task log and try again.",
+				"startingInstall": "Starting installation",
+				"fetchingLogs": "Fetching installer logs...",
+				"waitingLogs": "Waiting for installer logs...",
+				"processing": "Processing",
+				"installedTitle": "BillionMail installed successfully",
+				"installingTitle": "Installing BillionMail",
+				"readyTitle": "Ready to install BillionMail",
+				"readyMinimized": "Ready to start installation.",
+				"serviceReady": "The mail service is ready.",
+				"preparing": "Preparing mail services.",
+				"progressDescription": "Fetching installer logs while mail services are prepared.",
+				"readyDescription": "Start with the default settings, or open config to customize installation.",
+				"successDescription": "The mail service is ready. Continue with console configuration.",
+				"installPath": "Install path",
+				"serviceStatus": "Service status",
+				"version": "Version",
+				"open": "Open",
+				"configurationParameters": "Configuration parameters",
+				"active": "Active",
+				"conflictTitle": "Installation environment conflict",
+				"conflictAlertTitle": "Port conflicts detected",
+				"conflictAlertDescription": "The following ports are occupied by other applications. Resolve the port conflicts and try again.",
+				"checkInstallFailed": "Installation environment check failed. Check the server environment and try again.",
+				"conflictOccupied": "Occupied",
+				"conflictProcess": "Process",
+				"successTip": "Open the BillionMail console after installation and finish domain, DNS, and sender verification settings."
+			}
 		}
 	}
 }

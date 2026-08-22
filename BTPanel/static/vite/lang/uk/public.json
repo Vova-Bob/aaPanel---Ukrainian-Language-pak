@@ -88,6 +88,9 @@
 			"Enable": "Увімкнути",
 			"Disable": "Вимкнути"
 		},
+		"AlarmTask": {
+			"ConfigurationTask": "Налаштування сповіщень"
+		},
 		"Table": {
 			"Ps": "Примітка",
 			"Status": "Статус",
@@ -110,6 +113,7 @@
 			"Disable": "Вимкнено",
 			"Running": "Працює",
 			"Stopped": "Зупинено",
+			"NotConfigured": "Не налаштовано",
 			"Paused": "Призупинено",
 			"TurnOn": "Увімкнути",
 			"TurnOff": "Вимкнути",
