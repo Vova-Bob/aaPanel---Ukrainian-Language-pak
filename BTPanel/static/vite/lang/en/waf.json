@@ -967,7 +967,7 @@
 				"title": "Dashboard Settings",
 				"monitorTitle": "Monitor title",
 				"monitorTitlePlaceholder": "Enter monitor title",
-				"screenVersion": "Dashboard version",
+				"screenVersion": "Version",
 				"serverCoords": "Server Coordinates",
 				"longitude": "Longitude",
 				"longitudePlaceholder": "Enter longitude, e.g. 116.395645",
@@ -996,6 +996,8 @@
 				"title": "Live Web Defense",
 				"description": "Ranked by blocked request count",
 				"rankIp": "Rank / IP address",
+				"rank": "Rank",
+				"ipAddress": "IP address",
 				"country": "Country",
 				"hits": "Hits",
 				"empty": "No real-time protection data"
